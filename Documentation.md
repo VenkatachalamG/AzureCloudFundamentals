@@ -270,3 +270,36 @@
             </tr>
         </tbody>
     </table>
+<h2>Azure Resources</h2>
+<p>Azure Resources are the objects that are used to manage the various Azure services that we create. Each Resource represents or contains information about a resource or service lifecycle. Each time we create an Azure Resource, it is created as a .config JSON file.</p>
+
+![pic3](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/5f716093-bb4d-4786-84ad-bda60f023a71)
+<h5>An Example of an Azure Resource Group JSON Config File</h5>
+
+<h2>Azure Resource Groups</h2>
+<p>Azure Resource Groups are logical collection or grouping of Azure Resources. They were created as a tool to group Azure Resources to manage them. There are many ways in which Azure Resources can be grouped. Some logically defined ones are:</p>
+<ul>
+   <li><h3>Grouped by Resource Type</h3>
+<p>This is a kind of grouping where the goal or need is to group the resources by the category of the resource. For example, you could group all SQL resources under one resource group and group all Web Apps Resource in another resource group.</p>
+
+![Picture1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/7b7b8b11-de38-4ffc-b98e-6d18e21e0e02)
+<h5>An Example of Grouping Azure Resources by Resource Type</h5></li>
+
+   <li><h3>Grouped by Application Lifecycle</h3>
+<p>This is a kind of grouping where the goal or need is to group the resources by the lifecycle of the application being developed so that you can test and deploy environments separately and apply any configurations, policies or any network rules easily and efficiently.</p></li>
+
+![Picture2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/c796967c-e1c8-4068-838d-c148da6a6246)
+<h5>An Example of Grouping Azure Resources by Application Lifecycle/Environments</h5>
+
+   <li><h3>Grouped by Department, Location, Billing</h3>
+<p>This is a kind of grouping where the goal or need is to group the resources by the amount of costs of each resource for efficient billing purposes, by the department type so that teams can quickly access their application resources and track and report on cloud spending by department, or by the location so you can apply data sovereignty and security rules easily for data.</p></li>
+</ul>
+<p>As there is not one single policy that can satisfy all the needs of an organization, organizations tend to use a combination of all the above-mentioned grouping types. Combining these criteria allows for a more tailored and efficient organization of resources, providing better control and visibility in managing Azure environments.</p>
+
+<h2>Resource Manager</h2>
+<p>We can provision our Azure Resources and create Azure Resource Groups and basically access our Azure Account through various methods. We can use the Azure portal, use Azure CLI, through a REST API, or through some SDKs. But all of them eventually go through a single point of management and authentication called the Azure Resource Manager (ARM). The Azure ARM is a centralized management layer for all resources and is linked with the Entra ID (previously known as Azure Active Directory or Azure AD) for authentication and authorization of users. Therefore, the two features of Azure ARM are unified language and control access and resources.</p>
+
+![pic4](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/7863c705-c506-44a3-8ff0-4c3ac14dba79)
+<h5>The dashboard view of the Azure Resource Manager</h5>
+
+🚀<b>Snapshots for the creation of Azure Resources, Resource Groups : <a link href="Snapshots/Azure Resources,RGs">Click here</a></b>
