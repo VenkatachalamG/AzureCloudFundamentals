@@ -5,4 +5,4 @@
 ⭐<b>Thanks for reading</b>
 #️⃣<b>AzureCloudFundamentals</b>#️⃣
 
-📄<b>< a link href = https://venkatachalamg.github.io/>My Resume</b> 
+📄<a link href = https://venkatachalamg.github.io/><b>My Resume</b> 
