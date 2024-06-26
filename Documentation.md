@@ -209,11 +209,64 @@
         <li>Meet any security & compliance requirements.</li>
         <li>Can take advantage of all public cloud benefits.</li>
     </ul>
-    <p><b>Disadvantages:</b></p>
+    <p><b>Disadvantages:</b> Can be more expensive.
+<h2>What is a Data Center?</h2>
+    <p>A data center is a physical facility designed for hosting a group of networked servers including its own dedicated power supply, cooling systems, and networking infrastructure. These facilities are essential for ensuring continuous operations and optimal performance of servers and data storage.</p>
+
+<h2>Regions</h2>
     <ul>
-        <li>Can be more expensive.</li>
-        <li>Complicated to manage due to larger landscape.</li>
-        <li>Most dependent on IT skills & expertise from all three models.</li>
+        <li><b>Geographical area on the planet.</b></li>
+        <li><b>One but usually more data centers connected with low-latency network (<2 milliseconds).</b></li>
+        <li><b>Location for your services.</b></li>
+        <li><b>Some services are available only in certain regions.</b></li>
+        <li><b>Some services are global services, as such are not assigned/deployed in specific region.</b></li>
+        <li><b>Globally available with 50+ regions.</b></li>
     </ul>
-    <p><b>Example: VMware Cloud Foundation</b><br>
-    Integrates private and public cloud infrastructure, providing a unified environment for managing applications across different platforms.</p>
+
+<h2>Availability Zone</h2>
+    <p>A regional feature in cloud infrastructure involves the grouping of physically separate facilities within a geographical region. These facilities are strategically located to enhance reliability and resilience against data center failures. By dispersing infrastructure across multiple sites within a region, cloud providers ensure that services remain accessible and operational even in the event of localized disruptions or failures, thereby maintaining continuity and minimizing downtime for users and applications.</p>
+
+<h2>Two Service Categories</h2>
+    <ul>
+        <li><b>Zonal services (Virtual Machines, Disks, etc.).</b></li>
+        <li><b>Zone-redundant services (SQL, Storage, etc.).</b></li>
+    </ul>
+
+<h2>Not all Regions</h2>
+    <p>Not all regions in cloud computing infrastructure are uniformly supported, as availability varies based on geographic location and provider infrastructure deployment strategies. A supported region typically consists of three or more availability zones, with each zone comprising one or more data centers.</p>
+
+<h2>Region Pair</h2>
+    <ul>
+        <li><b>Each region is paired with another region making it a region pair.</b></li>
+        <li><b>Region pairs are static and cannot be chosen (manually).</b></li>
+        <li><b>Each pair resides within the same geography with exception being Brazil South with its region pair residing in United States.</b></li>
+        <li><b>Physical isolation with at least 300 miles distance (when possible).</b></li>
+    </ul>
+
+<h3>Example of some Region-Pairs:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>REGION PAIR A</th>
+                <th>REGION PAIR B</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>EAST US</td>
+                <td>WEST US</td>
+            </tr>
+            <tr>
+                <td>UK WEST</td>
+                <td>UK SOUTH</td>
+            </tr>
+            <tr>
+                <td>NORTH EUROPE (Ireland)</td>
+                <td>WEST EUROPE (Netherlands)</td>
+            </tr>
+            <tr>
+                <td>EAST ASIA (Hong Kong)</td>
+                <td>SOUTHEAST ASIA (Singapore)</td>
+            </tr>
+        </tbody>
+    </table>
