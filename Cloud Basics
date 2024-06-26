@@ -1,0 +1,60 @@
+<h1>WHAT IS CLOUD COMPUTING?</h1><br>
+Cloud Computing is the study of how services are delivered as a  delivery model over the internet (cloud). This includes but is not limited to :<br>
+<ul>
+<li ><b>compute</b> power meaning servers such as windows, linux, hosting environments, etc.</li>
+<li><b>storage</b> like files and/or databases</li>
+  <li><b>networking</b> in azure but also outside when connecting to your company network</li>
+  <li><b>analytics</b> services for visualization and telemetry data</li>
+</ul>
+
+<h1> CapEx vs OpEx</h1><br>
+<table>
+    <tr>
+        <th></th>
+        <th>Capital Expenditure</th>
+        <th>Operational Expenditure</th>
+    </tr>
+    <tr>
+      <td><b>Up front cost</b></td>
+        <td>Significant</td>
+        <td>None</td>
+    </tr>
+    <tr>
+      <td><b>Ongoing cost</b></td>
+        <td>Low</td>
+        <td>Based on usage</td>
+    </tr>
+    <tr>
+      <td><b>Tax Deduction</b></td>
+        <td>Over time</td>
+        <td>Same year</td>
+    </tr>
+    <tr>
+      <td><b>Early Termination</b></td>
+        <td>No</td>
+        <td>Anytime</td>
+    </tr>
+    <tr>
+      <td><b>Maintenance</b></td>
+        <td>Significant</td>
+        <td>Low</td>
+    </tr>
+    <tr>
+      <td><b>Value over time</b></td>
+        <td>Lowers</td>
+        <td>No change</td>
+    </tr>
+</table>
+
+<h1>What is a Consumption-Based Model?</h1>
+<p>The consumption-based model is a pricing model used in the cloud so that customers are only charged based on their resource usage.</p>
+
+<b>This model is characterized by</b>
+<ul>
+    <li>No associated upfront cost</li>
+    <li>No wasted resources as such no charges are incurred for unused resources*. Unused in this case is different per service. For instance, blob storage that stores any data is considered to be used, as it consumes the storage space. Virtual Machines that are running consume CPU, memory, and other resources even if there isn’t any traffic. Hence they are considered to be used and will incur charges.</li>
+    <li>Pay for what you need</li>
+    <li>Stop paying when you don’t</li>
+</ul>
+
+<p>Consumption is the virtual metric used to calculate how much each resource (service) in Azure was used. Each service has many smaller metrics that track its consumption to offer the best possible pricing model. Those metrics are tracked on a very granular level.</p>
