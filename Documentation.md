@@ -303,3 +303,38 @@
 <h5>The dashboard view of the Azure Resource Manager</h5>
 
 🚀<b>Snapshots for the creation of Azure Resources, Resource Groups : <a link href="Snapshots/Azure Resources,RGs">Click here</a></b>
+<h1>Virtualization</h1>
+  <p>
+    Virtualization is a technology that allows the emulation of physical machines, enabling multiple virtual machines to run on a single physical host (computer). A Virtual Machine (or VM) is an emulation of a physical computer system having virtual resources like CPU, memory, storage etc. Each VM can have different virtual hardware configurations configured to the needs of specific applications. This feature allows for the installation of different operating systems on each VM, providing total separation of environments. Such separation extends to file systems, services, ports, middleware, and configuration settings, ensuring that each VM operates independently and securely without interference from others.
+  </p>
+<h1>Virtual Machine Scale Sets</h1>
+  <p>
+    Infrastructure as a Service (IaaS) offers a set of identical virtual machines equipped with built-in auto scaling features, ensuring that resources can dynamically adjust to meet varying demands. This capability is particularly beneficial for workloads that require scalability, such as web services and batch processing. With IaaS, users can efficiently manage both manual and auto-scaled workloads, ensuring optimal performance and cost-efficiency. The flexibility to scale resources up or down as needed makes IaaS an ideal choice for applications with fluctuating or unpredictable usage patterns, providing a robust and responsive infrastructure for a wide range of computing needs.
+  </p>
+
+<h1>Containers</h1>
+  <p>
+    Using the host's operating system, virtualization can emulate entire operating systems, with Virtual Machines (VMs) emulating the underlying hardware. However, there are more lightweight options available that do not require a full operating system, reducing development effort, maintenance, and compute and storage requirements. These lightweight virtual environments can respond quicker to changes in demand, offering greater agility and efficiency. Designed for almost any scenario, these solutions provide flexibility and scalability, making them suitable for a variety of applications and workloads, from development and testing to production and high-demand environments.
+    <br>
+    Examples include Docker, Docker Compose, Kubernetes, LXC (Linux Containers), etc.
+  </p>
+
+<h1>Azure Container Instances</h1>
+  <p>
+    The simplest and fastest way to run a container in Azure is through Platform as a Service (PaaS) with serverless containers. Designed for small and simple web apps/services, background jobs, and scheduled scripts, this approach offers efficient, scalable solutions without the need for managing underlying infrastructure.
+  </p>
+
+<h1>Azure Kubernetes Service (AKS)</h1>
+  <p>
+    Kubernetes, an open-source container orchestration platform, offers highly scalable and customizable solutions as a Platform as a Service (PaaS). It is designed for high-scale container deployments, capable of managing a vast array of applications and services, making it ideal for any large-scale containerized environment.
+  </p>
+
+<h1>App Service</h1>
+  <p>
+    Azure App Service is designed as an enterprise-grade web application service, offering Platform as a Service (PaaS) capabilities. It supports multiple programming languages and containers, providing a versatile and scalable solution for deploying and managing web applications in a robust and efficient manner.
+  </p>
+
+<h1>Azure Functions (Function Apps)</h1>
+  <p>
+    As a Platform as a Service (PaaS), Azure Functions offers a serverless environment with two hosting and pricing models: a consumption-based plan and a dedicated plan. Designed for micro and nano-services, it provides a scalable and cost-effective solution for running small, modular functions without managing infrastructure.
+  </p>
