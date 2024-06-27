@@ -333,7 +333,7 @@
   <p>
     Azure App Service is designed as an enterprise-grade web application service, offering Platform as a Service (PaaS) capabilities. It supports multiple programming languages and containers, providing a versatile and scalable solution for deploying and managing web applications in a robust and efficient manner.
   </p>
-
+🚀<b>Snapshots for the creation of Azure Virtual Machines, VM Scale sets, Containers, App Service : <a link href="Snapshots/Azure VM, Scale Sets, App Service, Container Instances">Click here</a></b>
 <h1>Azure Functions (Function Apps)</h1>
   <p>
     As a Platform as a Service (PaaS), Azure Functions offers a serverless environment with two hosting and pricing models: a consumption-based plan and a dedicated plan. Designed for micro and nano-services, it provides a scalable and cost-effective solution for running small, modular functions without managing infrastructure.
