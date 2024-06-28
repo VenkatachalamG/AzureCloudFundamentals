@@ -338,3 +338,50 @@
     As a Platform as a Service (PaaS), Azure Functions offers a serverless environment with two hosting and pricing models: a consumption-based plan and a dedicated plan. Designed for micro and nano-services, it provides a scalable and cost-effective solution for running small, modular functions without managing infrastructure.
   </p>
 🚀<b>Snapshots for the creation of Azure Virtual Machines, VM Scale sets, Containers, App Service : <a link href="Snapshots/Azure VM, Scale Sets, App Service, Container Instances">Click here</a></b>
+<h1>Azure Networking Components</h1>
+
+<h2>Azure Virtual Network</h2>
+    <p>
+        A Virtual Network (VNet) in Azure represents logically isolated networking components that can be segmented into one or more subnets. These subnets are discrete sections within the VNet, allowing for organized and efficient management of resources. Subnets enable the communication of resources with each other, the internet, and on-premises networks, providing flexibility and connectivity across different environments. The main purpose of having subnets is:
+    </p>
+    <ul>
+        <li>Allowing users/customers to allocate IP addresses more smartly and efficiently for their resources</li>
+        <li>Allowing users/customers to group multiple resources together so that they can apply custom security rules to the required resources</li>
+    </ul>
+    <p>
+        Each VNet is scoped to a single region, ensuring that all resources within it are region-specific. However, VNet peering facilitates cross-region communication, enabling VNets in different regions to communicate seamlessly. You can connect or communicate between two VNets in different regions either through VNet Peering or through a Virtual Private Gateway (VPN Gateway).
+    </p>
+
+![Picture1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/6257fd0c-626c-4642-b498-7fd3f851237e)
+<h3>Figure showing how two VNets can be communicated</h3>
+
+<h2>Azure Load Balancer</h2>
+    <p>
+        Azure Load Balancer provides even traffic distribution, supporting both inbound and outbound scenarios to ensure optimal performance and reliability in high-availability scenarios. It effectively manages traffic for applications using both TCP (Transmission Control Protocol) and UDP (User Datagram Protocol), handling both internal and external traffic seamlessly. With port forwarding capabilities, Azure Load Balancer can direct traffic to specific ports based on your configurations. Designed to scale, it can manage up to millions of flows, making it a robust solution for applications requiring high traffic volumes and reliability.
+    </p>
+
+<h2>VPN Gateway</h2>
+    <p>
+        The specific type of virtual network gateway used for on-premises to Azure traffic over the public internet is called a VPN Gateway. A VPN Gateway is a type of virtual network gateway that sends encrypted traffic between your virtual network and your on-premises location over the public internet. You can also use a VPN Gateway to send encrypted traffic between Azure virtual networks. Each virtual network can have only one VPN Gateway, but the gateway can connect to multiple on-premises locations using site-to-site VPN connections.
+    </p>
+
+<h2>Application Gateway</h2>
+    <p>
+        Application Gateway is another kind of load balancer that specializes in handling HTTPS or web traffic. So when you want to route incoming traffic from HTTPS onto your virtual machines or App Service services, you could use an Application Gateway to do the job for you.
+    </p>
+
+<h2>Content Delivery Network</h2>
+    <p>
+        A Content Delivery Network (CDN) is designed to optimize the delivery of web content by reducing latency and improving load times. By distributing content across a network of servers located in various geographic locations, CDNs ensure that users can access data from a server that is physically closer to them. These servers, known as Points of Presence (POPs), cache content to provide faster and more efficient access. This significantly enhances the user experience, as it allows for quicker retrieval of web content, ensuring that users receive the information they need with minimal delay.
+    </p>
+    <p>
+        Note:
+        <ul>
+            <li>When creating a Virtual Machine, you can go to the Search in the navigation panel. There, search for ‘Diagram’ and then click on ‘Diagram’ to view a graphical representation of the networks and Network Security Groups (NSGs) that are associated with a VM. There you can view the structure of a Virtual Machine VNet consisting of the IP address configurations, VM’s public IP Addresses, and the network security group of a VM. </li><br>
+
+   ![sample networking diagram of VN of a VM](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/1876fdaa-329b-470d-9ae9-242e4ca4caa3)
+   <p><b>Diagram showing the network structure of a VNet of a Virtual MAchine</b></p>
+  <li>Point-of-Presence (POP) locations are the locations that are closest to users in a CDN service. Users can access their data with minimal latency thanks to these POP locations. Microsoft has over 120 POP locations.</li>
+        </ul>
+    </p>
+🚀<b>Snapshots for the creation of Azure Virtual Networks, VNet in a Virtual MAchine Resource : <a link href="Snapshots/Azure VNet">Click here</a></b>
