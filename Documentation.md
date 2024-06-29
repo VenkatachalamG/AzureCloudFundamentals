@@ -384,7 +384,7 @@
   <li>Point-of-Presence (POP) locations are the locations that are closest to users in a CDN service. Users can access their data with minimal latency thanks to these POP locations. Microsoft has over 120 POP locations.</li>
         </ul>
     </p>
-🚀<b>Snapshots for the creation of Azure Virtual Networks, VNet in a Virtual MAchine Resource : <a link href="Snapshots/Azure VNet">Click here</a></b>
+🚀<b>Snapshots for the creation of Azure Virtual Networks, VNet in a Virtual Machine Resource : <a link href="Snapshots/Azure VNet">Click here</a></b>
 <h1>Data Types</h1>
     <p>
         Structured data is characterized by its strict schema representation, typically organized in tables where each row has a predefined schema. This data format often involves defined relationships between tables, making it suitable for use in relational databases. Semi-structured data, on the other hand, can also be represented in tables but lacks a strict schema, with the primary requirement being a unique key identifier for each row. This flexibility allows for variations in data structure while still maintaining some level of organization. Unstructured data encompasses a wide range of file formats, including binary files, application files, images, movies, and other media. This type of data does not have any specific schema or structure, making it versatile but often more challenging to manage and analyze.
@@ -427,4 +427,6 @@
     </p>
 
 ![Picture2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/88ec4724-5e06-448a-ad42-4a0b183a9ea1)<br>
-<b>Sketch of a Disk Storage</b>
+<b>Sketch of a Disk Storage</b><br>
+
+🚀<b>Snapshots for the creation of Azure Blobs, File Shares and Tables : <a link href="Snapshots/Azure Blobs, File Shares, Tables">Click here</a></b>
