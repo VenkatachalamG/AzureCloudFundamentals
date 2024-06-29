@@ -57,11 +57,11 @@
 
 <h2>Consumption</h2>
     <p>Consumption is the virtual metric used to measure and bill resources in a cloud environment. It ensures efficient use of resources and cost management based on actual utilization.</p>
-<h1>Service Models Responsibilities</h1>
+<h1>Service Model Responsibilities</h1>
     <p>Diagram representing the layers of an application, platform, and hardware in an organizational use case.</p>
     <p>In a cloud infrastructure, layers include application, platform, and hardware. The application layer involves software and services users interact with. The platform layer provides runtime environments, middleware, and operating systems. The hardware layer includes servers, storage, and networking components, managed by the cloud provider for seamless operation. Above the hardware and application platform layers in cloud infrastructure, there's a crucial management and orchestration layer. This layer coordinates resources across multiple servers and data centers, ensuring optimal performance, scalability, and fault tolerance. It integrates automation and monitoring tools to streamline operations and enhance the overall efficiency of cloud services delivery.</p>
 
-    <h2>Service Models Responsibilities</h2>
+<h2>Services included in a Service Model</h2>
     <ul>
         <li><b>Infrastructure as a Service (IaaS):</b> Infrastructure as a Service (IaaS) provides virtualized computing resources over the internet. It includes virtual machines, storage, and networking components that users can rent on-demand. With IaaS, businesses can scale their infrastructure without investing in physical hardware.</li>
         <li><b>Platform as a Service (PaaS):</b> Platform as a Service (PaaS) provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the underlying infrastructure. PaaS offerings typically include development tools, database management systems, and middleware.</li>
@@ -353,7 +353,7 @@
     </p>
 
 ![Picture1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/6257fd0c-626c-4642-b498-7fd3f851237e)
-<h3>Figure showing how two VNets can be communicated</h3>
+<b>Figure showing how two VNets can be communicated</b>
 
 <h2>Azure Load Balancer</h2>
     <p>
@@ -385,3 +385,46 @@
         </ul>
     </p>
 🚀<b>Snapshots for the creation of Azure Virtual Networks, VNet in a Virtual MAchine Resource : <a link href="Snapshots/Azure VNet">Click here</a></b>
+<h1>Data Types</h1>
+    <p>
+        Structured data is characterized by its strict schema representation, typically organized in tables where each row has a predefined schema. This data format often involves defined relationships between tables, making it suitable for use in relational databases. Semi-structured data, on the other hand, can also be represented in tables but lacks a strict schema, with the primary requirement being a unique key identifier for each row. This flexibility allows for variations in data structure while still maintaining some level of organization. Unstructured data encompasses a wide range of file formats, including binary files, application files, images, movies, and other media. This type of data does not have any specific schema or structure, making it versatile but often more challenging to manage and analyze.
+    </p>
+
+<h1>Storage Account</h1>
+    <p>
+        A group of services that include blob storage, queue storage, table storage, and file storage is designed to store files, messages, and semi-structured data. These services are highly scalable, capable of handling up to petabytes of data, and offer exceptional durability with availability rates ranging from 99.999999999% (11 nines) to 99.99999999999999% (16 nines). Additionally, they are the most cost-effective per gigabyte storage options available, making them ideal for various storage needs while ensuring data reliability and accessibility.
+    </p>
+    <p>
+        Azure Storages are typically divided into these main categories:
+    </p>
+    <ul>
+        <li>Azure Blob Storage</li>
+        <li>Azure Queue Storage</li>
+        <li>Azure Table Storage</li>
+        <li>Azure File Storage</li>
+    </ul>
+
+<h2>Blob Storage</h2>
+    <p>
+        A BLOB (Binary Large Object) is designed for the storage of files of any kind. This storage solution offers three varieties of storage tiers to accommodate varying access needs: the Hot tier for frequently accessed data, the Cool tier for infrequently accessed data which offers lower availability but high durability, and the Archive tier for data that is rarely, if ever, accessed. This tiered approach allows for optimized cost management and efficient data storage solutions based on usage patterns. The Hot tier has the highest price in terms of storage rate, while the Archive Tier has the highest price for data retrieval rate.
+    </p>
+
+![Picture1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/45cc05ca-5d9a-4338-9117-59e46a53078b)<br>
+<b>Diagram to show structure of Blob Storage</b>
+<h2>Queue Storage</h2>
+    <p>
+        Storage for small pieces of data, such as messages, is designed for scalable asynchronous processing. This type of storage ensures that data can be processed efficiently and independently of the application's main flow, allowing for better handling of workloads that require decoupling and parallel processing. Messages are put into a queue which are picked up by services for execution. Queue Storage helps to offload applications efficiently and its scalability ensures that it can handle varying loads, making it an ideal solution for systems that need to manage large volumes of messages or data fragments asynchronously.
+    </p>
+
+<h2>Table Storage</h2>
+    <p>
+        Storage for semi-structured data, commonly referred to as NoSQL storage, is designed to accommodate data without the need for foreign joins, foreign keys, relationships, or a strict schema. This flexibility allows for rapid access and manipulation of data, making it suitable for applications requiring high performance and scalability. Additionally, NoSQL storage supports a wide range of programming interfaces and SDKs, enabling developers to integrate and interact with the data seamlessly across various platforms and languages.
+    </p>
+
+<h2>Disk Storage</h2>
+    <p>
+        Disk emulation in the cloud provides persistent storage for Virtual Machines, offering flexibility and scalability for various computing needs. This storage solution comes in different sizes and types, such as SSD and HDD, catering to different performance requirements. Additionally, it features various performance tiers to optimize for speed and cost-efficiency. Cloud disks can be either unmanaged or managed, giving users the option to handle storage management themselves or rely on the cloud provider for automated management and maintenance.
+    </p>
+
+![Picture2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/88ec4724-5e06-448a-ad42-4a0b183a9ea1)<br>
+<b>Sketch of a Disk Storage</b>
