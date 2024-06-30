@@ -430,3 +430,59 @@
 <b>Sketch of a Disk Storage</b><br>
 
 🚀<b>Snapshots for the creation of Azure Blobs, File Shares and Tables : <a link href="Snapshots/Azure Blobs, File Shares, Tables">Click here</a></b>
+
+<h1>Azure Database Services</h1>
+
+<h2>Cosmos DB</h2>
+<p>Azure Cosmos DB is a globally distributed NoSQL database service that supports semi-structured data and operates in a schema-less manner. It provides multiple APIs, including SQL, MongoDB, Cassandra, Gremlin, and Table Storage, offering versatility for various data models and applications. This service is specifically designed for highly responsive, real-time applications requiring super low latency responses, typically under 10 milliseconds. Additionally, Azure Cosmos DB is ideal for multi-regional applications, ensuring data is efficiently replicated and accessible worldwide to maintain high availability and performance.</p>
+
+![Picture1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/df448898-cf04-468a-b251-b80a903f2854)
+<p><strong>A diagram of how Azure Cosmos DB replicates across regions and has an access rate of &lt;10ms</strong></p>
+
+<h2>SQL Database</h2>
+<p>Azure SQL Database is a cloud-based relational database service provided as a Platform as a Service (PaaS), also known as Database as a Service (DBaaS). It supports structured data defined using schemas and relationships, enabling the organization and integrity of data. With rich query capabilities using SQL, Azure SQL Database allows for complex data manipulation and retrieval. This service is designed to be high-performance, reliable, fully managed, and secure, making it an excellent choice for building robust applications. It offloads database management tasks, such as patching and backups, allowing developers to focus on innovation.</p>
+
+![Picture2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/5b044cba-c9d2-4445-9b4a-cfc906d98bc9)
+<p><strong>Diagram to show structure of SQL Database</strong></p>
+
+<h2>Azure SQL Product Family</h2>
+<p>Azure offers a suite of database services tailored to various needs, all built on reliable and high-performance technologies. Azure SQL Database is a dependable relational database service based on SQL Server, providing advanced features and seamless scalability. Azure Database for MySQL delivers a managed MySQL database engine within the Azure ecosystem, while Azure Database for PostgreSQL offers the same for the PostgreSQL engine, both ensuring high availability and security. Azure SQL Managed Instance provides a fully managed SQL Server experience, simplifying database management by the cloud provider. For those needing full control, Azure SQL on VM offers a fully fledged SQL Server on Infrastructure as a Service (IaaS). For big data and analytics, Azure Synapse, formerly known as Azure SQL Data Warehouse, features a Massively Parallel Processing (MPP) version of SQL Server, enabling high-performance data warehousing and complex query processing.</p>
+
+🚀<b>Snapshots for the creation of Azure DB Services : <a link href="Snapshots/Azure DB">Click here</a></b>
+
+<h1>Azure Marketplace</h1>
+
+<p>The Azure Marketplace functions like an "Azure Shop," where you can acquire a variety of services and solutions specifically designed for the Azure platform. Each product in the marketplace is a template that may encompass one or multiple services, catering to diverse needs. These products are provided by both first-party and third-party vendors, ensuring a wide range of offerings. The solutions available can leverage all service categories, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), allowing for comprehensive and integrated cloud solutions.</p>
+
+![Picture1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/27f84a83-4f82-4b6d-a752-c1fa9da7ca5e)
+<p><strong>Azure Marketplace in Azure Portal</strong></p>
+
+<h1>Internet of Things (IoT)</h1>
+
+<p>Internet of Things (IoT) is a network of internet-connected devices (IoT Devices or Smart Devices) embedded in everyday objects enabling sending and receiving data such as settings and telemetry. It also enables rapid data transfer between smart devices and infrastructure endpoints.</p>
+
+<h2>Azure IoT Hub</h2>
+
+<p>Azure IoT Hub is a managed service designed for bi-directional communication between IoT applications and the devices they manage. As a Platform as a Service (PaaS), it ensures high security, scalability, and reliability for connecting, monitoring, and controlling billions of IoT assets. Azure IoT Hub seamlessly integrates with numerous Azure services, enhancing its functionality and versatility. It supports programmable SDKs for popular programming languages, including C, C#, Java, Python, and Node.js, facilitating development across different platforms. Furthermore, it accommodates multiple communication protocols such as HTTPS, AMQP, and MQTT, making it a flexible solution for diverse IoT scenarios.</p>
+
+![Picture2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/7abdc928-3f40-4e0a-8c5f-50d10ac9fbae)
+<p><strong>Diagram showing how IoT Hub captures incoming data and sends it to various data processing activities like insights for analysis, data monitoring, and data control</strong></p>
+
+<h2>Azure IoT Central</h2>
+
+<p>Azure IoT Central is a Software as a Service (SaaS) platform designed to simplify the creation of IoT applications. It offers industry-specific app templates, allowing users to deploy solutions without requiring deep technical knowledge. This service facilitates the connection, management, and monitoring of IoT devices, ensuring a seamless and efficient IoT deployment. Azure IoT Central is built on top of the robust IoT Hub service and integrates with over 30 other Azure services, providing a comprehensive and powerful solution. Its architecture ensures high security, scalability, and reliability, making it an ideal choice for enterprises looking to leverage IoT technology with ease.</p>
+
+![Picture3](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/ce6b0bf2-7dc3-4ef2-92be-aeba62d0d71a)
+<p><strong>Diagram to show how IoT Central provides custom rules, exports, and APIs so that you don’t have to build your IoT applications from scratch</strong></p>
+
+<h2>Note:</h2>
+<p>To execute an Azure IoT Hub Sample program, follow the steps below:</p>
+<ol>
+    <li>Visit the webpage <a href="https://azure-samples.github.io/raspberry-pi-web-simulator/">https://azure-samples.github.io/raspberry-pi-web-simulator/</a> for a sample LED Blinking program using Raspberry Pi</li>
+    <li>Create an Azure IoT Hub resource in Azure Portal (See Snapshots folder)</li>
+    <li>Add a Device in IoT Hub</li>
+    <li>Copy its primary Connection String and paste it in Line 15 of the program given in the above URL site</li>
+    <li>Click on Run. You can see messages being sent back to Azure IoT Hub with some parameters in a JSON response-like format</li>
+</ol>
+
+🚀<b>Snapshots for the creation of Azure Marketplace and IoT Hub services : <a link href="Snapshots/Azure IoT">Click here</a></b>
