@@ -486,3 +486,42 @@
 </ol>
 
 🚀<b>Snapshots for the creation of Azure Marketplace and IoT Hub services : <a link href="Snapshots/Azure IoT">Click here</a></b>
+
+<h2>What is Artificial Intelligence?</h2>
+<p>Artificial Intelligence (AI) is the simulation of human intelligence & capabilities by computer software.</p>
+
+<h2>What is Machine Learning?</h2>
+<p>Machine Learning is a subcategory of AI where a computer software is “taught” to draw conclusions and make predictions from data. Machine learning is a branch of artificial intelligence where algorithms learn from data to make predictions or decisions. It involves training models on large datasets to recognize patterns and improve performance over time, enabling applications like image recognition, natural language processing, and recommendation systems.</p>
+
+<h2>Azure Machine Learning</h2>
+<p>A cloud-based platform for creating, managing, and publishing machine learning models, offered as Platform as a Service (PaaS), provides robust tools for developers and data scientists. At the top level, the Machine Learning Workspace organizes resources, while the Machine Learning Studio offers a comprehensive web portal for end-to-end development. Key features include Notebooks for Python and R programming, Automated ML for running multiple algorithm and parameter combinations to select the best model, and a Designer with a graphical interface for no-code development. Additionally, it facilitates the management of data storage and compute resources through Data & Compute, and orchestrates model training, deployment, and management tasks with Pipelines.</p>
+
+![pic1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/b6dd0dd6-30b4-4f5c-a1bb-9af9037b380d)
+<strong>Diagram to show flow of Azure ML Model</strong>
+
+<h2>What is Serverless?</h2>
+<p>Serverless computing is a cloud-hosted execution environment that allows customers to run their applications in the cloud while completely abstracting underlying infrastructure.</p>
+
+<h2>Azure Functions</h2>
+<p>A serverless coding platform, also known as Functions as a Service (FaaS), is designed for nano-service architectures and event-based applications. It scales up and down very quickly, offering high scalability to meet varying workloads. This platform supports popular languages and frameworks, including .NET, .NET Core, Java, Node.js, Python, and PowerShell, making it versatile and accessible for developers.</p>
+
+![pic2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/6629bf95-949a-4406-a93a-7d4e179f6a39)<br>
+<strong>Azure Functions structure</strong>
+
+<h2>Azure Logic Apps</h2>
+<p>A serverless enterprise integration service, offered as Platform as a Service (PaaS), provides seamless connectivity with over 200 popular services. It is designed for the orchestration of business processes and integration workflows across applications, data, systems, and services. This no-code solution empowers users to create sophisticated integrations without the need for extensive programming knowledge, streamlining operations and enhancing productivity.</p>
+
+<h2>Azure Event Grid</h2>
+<p>A fully managed serverless event routing service, utilizing a publish-subscribe model, is designed for event-based and near-real-time applications. It supports dozens of built-in events from the most common Azure services, facilitating seamless integration and efficient event handling. This service enables rapid development and deployment of responsive applications without the need for extensive infrastructure management.</p>
+
+<h2>NOTE : The next topic is not for azure fundamentals to learn in depth. It is mentioned for just a quick heads-up</h2>
+
+<h2>What is DevOps?</h2>
+<p>DevOps is a set of practices that combine both development (Dev) and operations (Ops). DevOps aims to shorten the development life cycle by providing continuous integration and delivery (CI/CD) capabilities while ensuring high quality of deliverables.</p>
+
+<h2>Azure DevOps</h2>
+<p>A comprehensive collection of services for building solutions using DevOps practices includes tools for every stage of development. These services encompass Boards for tracking work, Pipelines for creating CI/CD workflows to build, test, and deploy applications, Repos for code collaboration and versioning with Git, Test Plans for manual and exploratory testing, and Artifacts for managing project deliverables. Extensible with over 1000 apps available in the Marketplace, this collection evolved from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS), offering a robust, modern platform for seamless DevOps integration.</p>
+
+![pic3](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/66090143-b74d-4ffc-92f9-fba2c1ef0aab)
+<strong>Azure DevOps pipeline</strong><br>
+🚀<b>Snapshots for the creation of Azure Logic Apps and Azure ML Studio : <a link href="Snapshots/Azure ML Studio, Logic Apps">Click here</a></b>
