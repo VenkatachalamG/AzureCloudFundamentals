@@ -525,3 +525,32 @@
 ![pic3](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/66090143-b74d-4ffc-92f9-fba2c1ef0aab)
 <strong>Azure DevOps pipeline</strong><br>
 🚀<b>Snapshots for the creation of Azure Logic Apps and Azure ML Studio : <a link href="Snapshots/Azure ML Studio, Logic Apps">Click here</a></b>
+<h1>Azure Fundamentals</h1>
+
+<h2>Azure Portal</h2>
+<p>The Azure Portal is a public web-based interface designed for the comprehensive management of the Azure platform. It offers a self-service environment where users can create, manage, and monitor their Azure resources with ease. The portal is highly customizable, allowing users to personalize their dashboard and access the tools and services that best suit their needs. For simple tasks such as creating virtual machines, managing storage accounts, or configuring network settings, the Azure Portal provides an intuitive, user-friendly interface that simplifies these processes, enabling efficient and effective management of Azure resources.</p>
+
+<h2>Azure PowerShell</h2>
+<p>PowerShell, along with its Azure-specific module, is designed for automation and streamlining administrative tasks within the Azure ecosystem. With the introduction of PowerShell Core, it has become a multi-platform tool, accessible on Windows, macOS, and Linux. PowerShell is simple to use, offering a range of commands for managing Azure resources efficiently. For example, the <code>Connect-AzAccount</code> cmdlet allows users to log into their Azure account, while <code>Get-AzResourceGroup</code> lists all resource groups. Creating new resource groups and virtual machines is straightforward with <code>New-AzResourceGroup</code> and <code>New-AzVm</code> cmdlets, respectively. This powerful scripting environment enables users to automate complex tasks, enhancing productivity and consistency across their Azure infrastructure.</p>
+
+<h2>Azure CLI</h2>
+<p>The Azure Command Line Interface (CLI) is a powerful tool designed for automation and efficient management of Azure resources. Written in Python, it is a multi-platform solution that can be used across Windows, macOS, and Linux. The Azure CLI is straightforward to use, featuring intuitive commands such as <code>az login</code> to log into Azure, <code>az group list</code> to list resource groups, <code>az group create</code> to create new resource groups, and <code>az vm create</code> to create virtual machines. This enables users to perform these tasks directly from their native OS terminal, facilitating seamless scripting and automation of Azure resource management.</p>
+
+<h2>Azure Cloud Shell</h2>
+<p>Azure offers a cloud-based scripting environment that is completely free, providing robust support for both Azure PowerShell and Azure CLI. This environment is equipped with dozens of additional tools to enhance productivity and streamline workflows. Users can access this environment through multiple client interfaces, including integration with the Azure Portal (<a href="https://portal.azure.com">portal.azure.com</a>), Shell Portal (<a href="https://shell.azure.com">shell.azure.com</a>), Visual Studio Code Extension, Windows Terminal, Azure Mobile App, and Microsoft Docs integration. This wide range of access points ensures that users can manage their Azure resources conveniently and efficiently from any device or platform.</p>
+
+<h2>Azure Advisor</h2>
+<p>Azure provides a personalized consultant service designed to offer recommendations and best practices across several key areas. This service helps users optimize costs by suggesting appropriate SKU sizes, identifying idle services, and recommending reserved instances. For security, it advises on MFA settings, vulnerability settings, and agent installations. To enhance reliability, it recommends redundancy settings and enabling soft delete on blobs. Performance improvements are suggested through optimal SKU sizes, updated SDK versions, and IO throttling. Additionally, it promotes operational excellence by monitoring service health and managing subscription limits. Best of all, this service delivers actionable recommendations and is completely free, empowering users to maximize their Azure experience without additional costs.</p>
+
+<h2>Network Security Groups</h2>
+<p>Azure's traffic filtering capabilities are designed to manage both inbound and outbound traffic to and from resources within an Azure Virtual Network. This filtering is controlled through the creation of rules, allowing for multiple inbound and outbound rules to be specified. These rules are configured by defining the source and destination, which can be IP addresses, service tags, or application security groups. Additionally, rules require the specification of protocols (such as TCP, UDP, or any), ports or port ranges (e.g., 3389 for RDP, 22 for SSH, 80 for HTTP, and 443 for HTTPS), the direction of traffic (inbound or outbound), and priority, which dictates the order of evaluation. This flexible and powerful rule-based system ensures precise and secure traffic management for Azure resources.</p>
+
+![pic1](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/b8ec90f7-fa3c-4401-82da-aaf8b130094f)<br>
+<strong><p>Example of a Network Security Group</p></strong>
+
+<h2>Application Security Groups</h2>
+<p>Azure's feature for grouping virtual machines within a virtual network is designed to streamline and reduce maintenance efforts. By allowing users to assign Application Security Groups (ASGs) instead of explicit IP addresses, this feature simplifies the management of network security. ASGs enable the grouping of VMs based on their function or role, making it easier to apply security rules and policies uniformly across similar resources. This not only enhances security but also reduces the administrative overhead associated with managing individual IP addresses, leading to more efficient and organized network management in Azure.</p>
+
+![pic2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/42037968-7f61-4c2b-b037-14f9b3a25edc)
+
+<strong><p>Example of a Application Security Group</p></strong>
