@@ -554,3 +554,34 @@
 ![pic2](https://github.com/VenkatachalamG/AzureCloudFundamentals/assets/119162683/42037968-7f61-4c2b-b037-14f9b3a25edc)
 
 <strong><p>Example of a Application Security Group</p></strong>
+<h1>Azure Cloud Fundamentals</h1>
+<h2>Firewall</h2>
+<p>A firewall is a network security service that monitors and controls incoming and outgoing traffic.</p>
+
+<h3>Azure Firewall</h3>
+<p>Azure Firewall is a managed, cloud-based firewall service offered as a Platform as a Service (PaaS), also known as Firewall as a Service. It provides built-in high availability and is highly scalable to meet the growing needs of modern enterprises. Azure Firewall supports inbound and outbound traffic filtering rules, ensuring robust security for network traffic. Additionally, it allows for filtering based on Fully Qualified Domain Names (FQDN), such as microsoft.com, enhancing its ability to control access to specific domains. Fully integrated with Azure Monitor, Azure Firewall offers comprehensive logging and analytics capabilities, enabling detailed monitoring and insights into network traffic and security events.</p>
+
+![firewall](https://github.com/user-attachments/assets/c7f0ae45-955c-440f-9a0e-e75aeac5f690)
+<strong><p>Example of an Azure Firewall Working</strong>
+
+<h2>Denial of Service (DoS)</h2>
+<p>A cyber-attack with intent to cause temporary or indefinite disruption of service.</p>
+
+<h3>Distributed Denial of Service (DDoS)</h3>
+<p>A DoS attack that is originating from multiple servers.</p>
+
+<h3>Azure DDoS Protection</h3>
+<p>Azure DDoS Protection is a service designed to safeguard applications from distributed denial-of-service (DDoS) attacks by detecting and blocking malicious traffic while allowing legitimate users to connect. It helps prevent additional costs associated with auto-scaling environments by mitigating DDoS threats before they can impact resource usage. The service offers two tiers: Basic and Standard. The Basic tier is automatically enabled for the Azure platform, providing essential protection. The Standard tier, designed for Azure Virtual Network resources, offers enhanced mitigation and monitoring capabilities. It leverages machine learning to analyze traffic patterns, providing more accurate and effective protection against sophisticated DDoS attacks.</p>
+
+<h2>Azure Identity Access and Management Services</h2>
+
+<h3>Azure Active Directory</h3>
+<p>Azure Active Directory (Azure AD) is the Identity and Access Management service in Azure, designed to manage identities such as users, groups, and applications. It also handles access management for subscriptions, resource groups, roles, role assignments, and various authentication and authorization settings. Azure AD is utilized by multiple Microsoft cloud platforms, including Azure, Microsoft 365, Office 365, and Live.com services like Skype and OneDrive, ensuring seamless identity and access control across these services.</p>
+
+<h3>Multi-Factor Authentication (MFA)</h3>
+<p>Multi-Factor Authentication (MFA) is a process that uses more than one factor (evidence) to verify a user's identity, enhancing security. The types of factors include the Knowledge Factor ("Something you know," such as a password or PIN), the Possession Factor ("Something you have," such as a phone, token, card, or key), the Physical Characteristic Factor ("Something you are," such as a fingerprint, voice, face, or eye iris), and the Location Factor ("Somewhere you are," determined by GPS location). Azure Active Directory (Azure AD) supports Multi-Factor Authentication by default, allowing users to enable or disable it with a simple on-off switch.</p>
+
+![MFA](https://github.com/user-attachments/assets/122be298-3797-48e5-a0a8-f9c468e88295)
+<strong><p>Example of Azure MFA</strong>
+
+🚀<b>Snapshots for the creation of Azure Firewall, NSGs, DDos attacks and MFA : <a link href="Snapshots/Azure Firewall">Click here</a></b>
