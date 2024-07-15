@@ -585,3 +585,40 @@
 <strong><p>Example of Azure MFA</strong>
 
 🚀<b>Snapshots for the creation of Azure Firewall, NSGs, DDos attacks and MFA : <a link href="Snapshots/Azure Firewall">Click here</a></b>
+
+<h2>Azure Key Vault</h2>
+<p>Azure Key Vault is a managed service (PaaS) designed to securely store and manage sensitive information such as keys, secrets, and certificates. It provides secure storage and easy access to these critical assets, ensuring they are protected from unauthorized access. Azure Key Vault is highly integrated with other Azure services, including Virtual Machines (VMs), Logic Apps, Data Factory, and Web Apps, facilitating seamless security across various applications and platforms. By centralizing the management of keys and secrets, it simplifies administration and enhances security. Additionally, Azure Key Vault offers comprehensive access monitoring and logging capabilities, providing visibility into who accessed what and when, thereby ensuring robust security and compliance.</p>
+
+![Picture2](https://github.com/user-attachments/assets/0a8dbf91-4ee2-4852-9a8d-f05dcf6f584a)
+<strong><p>Basic structure of working of Azure Key Vault</p></strong>
+
+<h2>Azure Role-Based Access Control (RBAC)</h2>
+<p>Azure Role-Based Access Control (RBAC) is an authorization system built on Azure Resource Manager (ARM) designed for fine-grained access management of Azure resources. It enables role assignments that combine three elements: role definitions, which are lists of permissions such as creating VMs, deleting SQL databases, or assigning permissions; security principals, which include users, groups, service principals, and managed identities; and scopes, which can be resources, resource groups, subscriptions, or management groups. The hierarchical structure of Azure RBAC follows the order of management groups, subscriptions, resource groups, and resources. It supports both built-in and custom roles, providing flexibility in defining specific access controls tailored to organizational needs.</p>
+
+<h3>What is a Role?</h3>
+<p>Role (role definition) is a collection of actions that the assigned identity will be able to perform. Role definition is an answer to a question “What can be done?”</p>
+
+<h3>What is a Security Principal?</h3>
+<p>Security Principal is an Azure object (identity) that can be assigned to a role (ex. users, groups or applications). Security Principal assignment is an answer to a question “Who can do it?”</p>
+
+![Picture3](https://github.com/user-attachments/assets/cdd1087f-6b9e-49c5-bcc8-ed4197068e38)
+<strong><p>Flow Diagram of Security Principal</p></strong>
+
+<h3>What is a Scope?</h3>
+<p>Scope is one or more Azure resources that the access applies to. Scope assignment is an answer to a question “Where can it be done?”</p>
+
+<h3>What is a Role Assignment?</h3>
+<p>Role assignment is a combination of the role definition, security principal and scope.</p>
+
+<h2>Azure Resource Locks</h2>
+<p>Azure Resource Locks are designed to prevent accidental deletion or modification of Azure resources and are used in conjunction with Role-Based Access Control (RBAC). There are two types of locks: Read-only (ReadOnly), which allows only read actions, and Delete (CanNotDelete), which permits all actions except deletion. These locks are applied hierarchically, meaning they can be inherited from higher scopes, such as subscriptions, down to resource groups and individual resources. However, management groups cannot be locked. Only users with Owner or User Access Administrator roles, which are built-in roles, have the authority to manage these locks, ensuring that critical resources remain protected from unintentional changes.</p>
+
+<h2>Azure Resource Tags</h2>
+<p>Tags in Azure are simple Name (key) - Value pairs designed to help with the organization of Azure resources. They play a critical role in various aspects of resource management, including resource governance, security, operations management, cost management, and automation. By assigning tags, organizations can easily categorize and identify resources, enabling more efficient management and monitoring.</p>
+
+![Picture1](https://github.com/user-attachments/assets/ed4d2e2c-ef30-415e-be1e-2bb2792b4e8a)
+<strong><p>Azure Resource Tags</p></strong>
+
+<p>Typical tagging strategies include functional tagging, where resources are marked by their function, such as "environment = production." Classification tagging is used to indicate the policies applied to resources, for example, "classification = restricted." Finance or accounting tagging helps in billing and cost management, such as "department = finance." Partnership tagging is used to mark resources based on the association of users or groups, like "owner = adam." Tags can be applied to resources, resource groups, and subscriptions, providing flexibility in organizing different levels of the Azure environment. However, it is important to note that tags are not inherited by default, requiring explicit tagging at each desired level.</p>
+
+🚀<b>Snapshots for the creation of Azure KeyVault and Azure Resource Tags : <a link href="Snapshots/Azure Key Vault and Resource Tags">Click here</a></b>
