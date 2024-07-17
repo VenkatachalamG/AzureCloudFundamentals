@@ -622,3 +622,191 @@
 <p>Typical tagging strategies include functional tagging, where resources are marked by their function, such as "environment = production." Classification tagging is used to indicate the policies applied to resources, for example, "classification = restricted." Finance or accounting tagging helps in billing and cost management, such as "department = finance." Partnership tagging is used to mark resources based on the association of users or groups, like "owner = adam." Tags can be applied to resources, resource groups, and subscriptions, providing flexibility in organizing different levels of the Azure environment. However, it is important to note that tags are not inherited by default, requiring explicit tagging at each desired level.</p>
 
 🚀<b>Snapshots for the creation of Azure KeyVault and Azure Resource Tags : <a link href="Snapshots/Azure Key Vault and Resource Tags">Click here</a></b>
+
+<h2>Azure Policy</h2>
+<p>Azure Policy is a service designed to help with resource governance, security, compliance, and cost management in an Azure environment. Unlike Role-Based Access Control (RBAC), which focuses on user actions, Azure Policy focuses on resource properties. A policy definition specifies conditions (if/else) and effects (such as deny, audit, append, modify) that dictate what should happen to resources. Examples include policies for allowed resource types, locations, SKUs, and inherited resource tags. Both built-in and custom policies are supported. A group of policy definitions is called a policy initiative. Policies or initiatives are assigned to scopes, which can include management groups, subscriptions, resource groups, and individual resources. Policies also allow for exclusions within these scopes. They are evaluated during resource creation or updates, and existing resources can be brought into compliance through remediation tasks.</p>
+
+<h2>Azure Blueprints</h2>
+<p>Azure Blueprints is a package of various Azure components, including Resource Groups, ARM Templates, Policy Assignments, and Role Assignments. It provides centralized storage for organizationally approved design patterns, ensuring consistency and compliance across deployments. A Blueprint definition describes what should happen, encapsulating these components into a reusable package. Once defined, a Blueprint can be assigned to specific scopes, such as management groups or subscriptions, describing where it should be deployed. This enables streamlined and repeatable deployments of Azure environments that adhere to organizational standards.</p>
+
+![blueprint](https://github.com/user-attachments/assets/83bc1c88-edcc-4c19-b01e-8f57fade00a6)
+<strong><p>Strucutre and flow of Azure Blueprints</p></strong>
+
+<h2>Cloud Adoption</h2>
+<p>Cloud adoption is a strategic move by an organization to leverage cloud in their business</p>
+
+![caf](https://github.com/user-attachments/assets/c1820cf5-1ac5-4e9f-abf4-7582cdbcdbee)
+<strong><p></p></strong>
+
+<h2>Cloud Adoption Framework</h2>
+<p>Cloud Adoption Framework for Azure is a set of</p>
+<ul>
+    <li>tools,</li>
+    <li>best practices,</li>
+    <li>guidelines and</li>
+    <li>documentation</li>
+</ul>
+<p>prepared by Microsoft to help companies with their cloud adoption journey.</p>
+
+<h3>Strategy</h3>
+<ol>
+    <li>Understand your motivation
+        <ul>
+            <li>Answer the question WHY MOVE?</li>
+            <li>Common Motivation Triggers include
+                <ul>
+                    <li>Migration
+                        <ul>
+                            <li>Cost Savings on infrastructure</li>
+                            <li>Reduction in complexity</li>
+                            <li>Operation optimization</li>
+                            <li>Increased business agility</li>
+                        </ul>
+                    </li>
+                    <li>Innovation
+                        <ul>
+                            <li>Reaching a global scale</li>
+                            <li>Customer experience improvements</li>
+                            <li>Transformation of products or services</li>
+                            <li>Market disruption</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Business Outcome
+        <ul>
+            <li>Answer the question WHAT TO MEASURE?</li>
+            <li>Defined, concise and observable outcome captured by a specific measure, for example
+                <ul>
+                    <li>Increase in revenue</li>
+                    <li>Increase in profit</li>
+                    <li>Cost reduction</li>
+                    <li>Global access to customers</li>
+                    <li>Reaching new markets</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Business Justification
+        <ul>
+            <li>Answer the question WHAT’S MY RETURN ON INVESTMENT?</li>
+            <li>Develop a business case to validate the financial model that supports your motivations and outcomes</li>
+            <li>Tools that support this process are
+                <ul>
+                    <li>Azure TCO (Total Cost of Ownership) calculator - estimate current on-prem costs</li>
+                    <li>Azure Pricing Calculator - estimate future Azure costs</li>
+                    <li>Azure Cost Management - see current Azure costs</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>First Project
+        <ul>
+            <li>Choose first project to validate your strategy (Proof of concept - POC) based on
+                <ul>
+                    <li>Business Criteria
+                        <ul>
+                            <li>Currently operating</li>
+                            <li>Dedicated owner</li>
+                            <li>Strong motivation to move</li>
+                        </ul>
+                    </li>
+                    <li>Technical Criteria
+                        <ul>
+                            <li>Minimum dependencies and assets</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3>Plan</h3>
+<ol>
+    <li>Digital Estate (INVENTORY OF ASSETS)
+        <ul>
+            <li>Review current landscape and list all projects/solutions (digital assets)</li>
+            <li>Choose one of the five (5) R’s of rationalization
+                <ul>
+                    <li>Rehost - move as is; typically into containers or IaaS (virtual machines)</li>
+                    <li>Refactor - make small code changes and move to PaaS (ex. Azure SQL, Azure App Service, etc.)</li>
+                    <li>Rearchitect - make complex code changes to introduce new features or fix incompatible apps</li>
+                    <li>Rebuild - create a new application using cloud first design</li>
+                    <li>Replace - review available SaaS solutions and replace legacy or unneeded applications</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Initial Organization Alignment
+        <ul>
+            <li>Align people so they will support your adoption plan</li>
+            <li>Map people to capabilities</li>
+        </ul>
+    </li>
+    <li>Skills Readiness Plan
+        <ul>
+            <li>Review current skills and address the gaps</li>
+        </ul>
+    </li>
+    <li>Cloud Adoption Plan - combine everything from steps 1 to 3 into a single cloud adoption plan</li>
+</ol>
+
+<h3>Ready</h3>
+<ol>
+    <li>Azure Setup Guide - Review the Azure setup guide to become familiar with the tools and approaches you need to use to create a landing zone.</li>
+    <li>Azure Landing Zone - Choose an appropriate Azure Subscription type that best suits your needs and establish an initial Azure environment.</li>
+    <li>Extend Landing Zone - Expand the initial landing zone to fit your business needs.</li>
+    <li>Best Practices - Review everything and ensure best practices are followed.</li>
+</ol>
+
+<h3>Adopt</h3>
+<h4>Migrate</h4>
+<ol>
+    <li>First Migration - migrate your first application to familiarize yourself with the cloud, guidelines and tools</li>
+    <li>Migration Scenarios - review and prepare migration scenarios/guidelines for your company
+        <ul>
+            <li>Virtual Machines - Linux, Windows, etc.</li>
+            <li>Apps - Java, .NET, NodeJS web apps, etc.</li>
+            <li>Data - SQL Server, PostgreSQL, File Servers, etc.</li>
+            <li>Other - VMware, Azure Stack, etc.</li>
+        </ul>
+    </li>
+    <li>Best Practices - address common migration needs through the application of consistent best practices.</li>
+    <li>Process Improvements - important part of this process heavy activity is to identify bottlenecks and improve with every migration</li>
+</ol>
+
+<h4>Innovate</h4>
+<ol>
+    <li>Business Value Consensus (VALUE TO STRATEGY)
+        <ul>
+            <li>Create hypothetical customer need</li>
+            <li>Decide on solution that solves it</li>
+            <li>Map this to your strategy</li>
+        </ul>
+    </li>
+    <li>Innovation Guide (TOOLS) - choose available Azure tools that will help your build this application</li>
+    <li>Best Practices - verify that best practices are followed for all tools in the toolchain</li>
+    <li>Process Improvements - gather feedback from the users and the customers to improve architectural decisions and future products</li>
+</ol>
+
+<h3>Govern & Manage</h3>
+<ol>
+    <li>Define governance solutions - Choose solutions to maintain compliance, security and ensure total control of the environment.
+        <ul>
+            <li>Those solutions should focus to
+                <ul>
+                    <li>Address Business Needs</li>
+                    <li>Provide Agility</li>
+                    <li>Control Risks</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Manage cloud environment (CLOUD OPERATIONS) - Hand over solutions and environment to cloud operations team for maintenance. Team should ensure that stability and costs are always in perfect balance to meet business commitments. Team should allow environment to grow, evolve and adapt to changing business needs.</li>
+</ol>
+
+<h3>Organize</h3>
+<p>Ensure that everyone knows what to do and when to do it for every stage in this process. One of the ways to achieve this is via R
