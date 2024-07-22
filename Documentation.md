@@ -810,3 +810,89 @@
 
 <h3>Organize</h3>
 <p>Ensure that everyone knows what to do and when to do it for every stage in this process. One of the ways to achieve this is via R
+
+<h2>Cost Affecting Factors</h2>
+<p>Azure service costs are influenced by several factors. Each service has a unique pricing model based on resource-specific metrics. Different Azure service offers, such as Enterprise, Web Direct, and CSP, come with varying cost and billing components, including prepaid options, billing cycles, and potential discounts. The cost of running Azure services can also differ based on the region in which they are deployed, and network traffic costs are incurred when data is uploaded (inbound/ingress) or downloaded (outbound/egress) from Azure. To optimize costs, Azure provides several savings options. Reserved Instances allow for significant cost savings by committing to a one- or three-year plan for specific virtual machines.</p>
+
+<h2>Azure Reservations</h2>
+<p>Purchase Azure services for 1 or 3 years in advance with significant discounts:</p>
+<ul>
+    <li><strong>Reserved instances</strong> – Azure Virtual Machines</li>
+    <li><strong>Reserved capacity</strong> – Azure Storage, SQL Database vCores, Databricks DBUs, Cosmos DB RUs</li>
+    <li><strong>Software plans</strong> – Red Hat, Red Hat OpenShift, SUSE Linux, etc.</li>
+    <li>Reservations are made for 1 or 3 years</li>
+</ul>
+
+<h2>Azure Spot VMs</h2>
+<p>Azure offers the option to purchase unused Virtual Machine capacity at a significant discount, which can be particularly beneficial for cost-saving strategies. This discounted capacity can be reclaimed by Azure at any time, providing flexibility in resource allocation. Customers can set a maximum price they are willing to pay after the discount, allowing them to manage costs while maintaining or evicting the machine as needed. This option is ideal for interruptible workloads such as batch processing, development and testing environments, large compute tasks, and other non-critical operations where occasional interruptions do not impact overall productivity.</p>
+
+<img src = "https://imgs.search.brave.com/29oUwsrRuOB8jPS4_T4ZYTE_nmm4i0xFaA4tDKeyG2M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWx0YXJvLmNvbS9o/eXBlci12L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzA3L0Rl/cGxveWluZy1hbi1B/enVyZS1TcG90LVZN/LTEucG5n">
+<strong><p>Deploying an Azure Spot VMs</p></strong>
+
+<h2>Tools</h2>
+<ul>
+    <li><strong>Pricing calculator</strong> – estimate the cost of Azure services
+        <ul>
+            <li>Select service</li>
+            <li>Adjust parameters (usage)</li>
+            <li>View the price</li>
+        </ul>
+    </li>
+    <img src = "https://imgs.search.brave.com/xs3tSHi_adIhDlqGKWgqsSZ_wqFUlZD6w1WHnWqv3do/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pMi53/cC5jb20vd3d3LnRl/Y2hjcnVtYmxlLm5l/dC93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OS8wMi9UQy1NU0ZU/LVByQ2FsLTAwMDIu/cG5nP2ZpdD0xMDI0/LDc1MyZzc2w9MQ">
+<strong><p>Azure Pricing Calculator</p></strong>
+    <li><strong>Total Cost of Ownership (TCO) calculator</strong> – estimate and compare the cost of running workloads in data centre versus Azure
+        <ul>
+            <li>Define your workloads</li>
+            <li>Adjust assumptions</li>
+            <li>View the report</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Azure Cost Management</h2>
+<p>Azure offers a centralized service for reporting usage and billing, providing a comprehensive view of your Azure environment's expenses. This service includes self-service cost exploration capabilities, enabling users to analyze and understand their spending patterns independently. It also allows for the creation of budgets and alerts, helping to manage and control costs proactively. Additionally, Azure provides cost recommendations to optimize spending and ensure efficient resource utilization. For convenience, automated exports are available, allowing users to regularly receive detailed billing and usage reports for further analysis and record-keeping.</p>
+
+<h2>SLA</h2>
+<p>Service Level Agreement (SLA) is a formal agreement between a service provider and a customer. SLA is a promise of a service’s availability (uptime & connectivity). Availability is a measure of time that a service remains operational.</p>
+<ul>
+    <li>Each Service has its own SLA</li>
+    <li>Ranges from 99% to 99.999%</li>
+    <li>Free services typically don’t have an SLA</li>
+    <li>Broken SLA means service credit return (discount)</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>SLA</th>
+            <th>Monthly Downtime</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>99%</td>
+            <td>7h 18m 17s</td>
+        </tr>
+        <tr>
+            <td>99.5%</td>
+            <td>3h 39m 8s</td>
+        </tr>
+        <tr>
+            <td>99.9%</td>
+            <td>43m 49s</td>
+        </tr>
+        <tr>
+            <td>99.95%</td>
+            <td>21m 54s</td>
+        </tr>
+        <tr>
+            <td>99.99%</td>
+            <td>4m 22s</td>
+        </tr>
+        <tr>
+            <td>99.999%</td>
+            <td>26s</td>
+        </tr>
+    </tbody>
+</table>
+
+🚀<b>Snapshots for the creation of Azure Cost Management : <a link href="Snapshots/Azure Cost Management">Click here</a></b>
